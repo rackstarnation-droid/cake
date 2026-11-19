@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tracy's Cakes | Artisanal Jamaican Cakes & Portmore Pickup</title>
-  <meta name="description" content="Handcrafted authentic Jamaican Black Cake, Rum Cakes, and Luxury Celebration Cakes baked fresh in Portmore by Tracy. Order directly via WhatsApp." />
+  <title>SweetSip&amp;Bites | Artisanal Jamaican Cakes, Loaves &amp; Treats — Portmore</title>
+  <meta name="description" content="Handcrafted Jamaican Fruit Cakes, Rum Mini Cakes, Sweet Potato Puddings, Banana Breads, Carrot Loaves, Cookies, Cupcakes & Custom Birthday Cakes in Portmore. Order via WhatsApp." />
+
+  <!-- Open Graph Meta Tags for Clean WhatsApp Link Previews -->
+  <meta property="og:title" content="SweetSip&amp;Bites | Artisanal Jamaican Cakes, Loaves &amp; Treats — Portmore" />
+  <meta property="og:description" content="Baked fresh to order in Portmore, St. Catherine. Browse our menu of Fruit Cakes, Banana Breads (Free Toppings!), Puddings, Cookies, Cupcakes & Custom Cakes and send your order straight to WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=85" />
 
   <!-- Google Fonts: Cormorant Garamond (Luxury Editorial Serif) & Plus Jakarta Sans (Clean UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,19 +27,23 @@
         extend: {
           colors: {
             espresso: {
-              DEFAULT: '#2C1810',
-              dark: '#1C0E09',
-              light: '#43261A',
+              DEFAULT: '#1F140E',
+              dark: '#140C08',
+              light: '#38241A',
             },
             cream: {
-              DEFAULT: '#FDFBF7',
-              warm: '#F7F2E9',
+              DEFAULT: '#FAF6F0',
+              warm: '#F3ECE1',
               card: '#FFFFFF',
             },
             gold: {
               DEFAULT: '#C8963E',
               light: '#DFB362',
               dark: '#A67726',
+            },
+            rum: {
+              DEFAULT: '#8B4513',
+              light: '#A85820',
             },
             tropical: {
               DEFAULT: '#2E5A44',
@@ -45,7 +55,7 @@
             sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
           },
           boxShadow: {
-            'luxury': '0 20px 45px -15px rgba(44, 24, 16, 0.12)',
+            'luxury': '0 20px 45px -15px rgba(31, 20, 14, 0.14)',
             'gold-glow': '0 10px 25px -5px rgba(200, 150, 62, 0.35)',
           }
         }
@@ -56,13 +66,13 @@
   <style>
     /* Custom subtle scrollbar & tactile utilities */
     body {
-      background-color: #FDFBF7;
-      color: #2C1810;
+      background-color: #FAF6F0;
+      color: #1F140E;
       -webkit-tap-highlight-color: transparent;
     }
 
     .glass-nav {
-      background: rgba(253, 251, 247, 0.88);
+      background: rgba(250, 246, 240, 0.90);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
     }
@@ -104,8 +114,8 @@
       <span class="hidden sm:inline text-cream/40">•</span>
       <span class="text-cream/90">Baked Fresh to Order by Tracy</span>
       <span class="hidden md:inline text-cream/40">•</span>
-      <a href="https://wa.me/18765059479?text=Hi%20Tracy!%20I%27d%20love%20to%20inquire%20about%20ordering%20a%20cake." target="_blank" rel="noopener" class="underline decoration-gold/70 hover:text-gold-light transition-colors">
-        WhatsApp: (876) 505-9479
+      <a href="https://wa.me/18765059479?text=Hi%20Tracy!%20I%27d%20love%20to%20place%20an%20order%20with%20SweetSip%26Bites." target="_blank" rel="noopener" class="underline decoration-gold/70 hover:text-gold-light transition-colors">
+        WhatsApp: +1 (876) 505-9479
       </a>
     </div>
   </div>
@@ -133,10 +143,10 @@
         </div>
         <div>
           <span class="block font-serif text-xl sm:text-2xl font-bold tracking-tight text-espresso leading-none">
-            Tracy’s Cakes
+            SweetSip&amp;Bites
           </span>
           <span class="block text-[11px] uppercase tracking-[0.18em] text-gold-dark font-semibold mt-0.5">
-            Portmore • Jamaica
+            Portmore • St. Catherine
           </span>
         </div>
       </a>
@@ -150,7 +160,7 @@
 
       <!-- Header Actions -->
       <div class="flex items-center gap-2.5 sm:gap-3">
-        <a href="https://wa.me/18765059479?text=Hi%20Tracy!%20I%27m%20visiting%20your%20website%20and%20would%20like%20to%20ask%20about%20a%20cake%20order." target="_blank" rel="noopener"
+        <a href="https://wa.me/18765059479?text=Hi%20Tracy!%20I%27m%20browsing%20SweetSip%26Bites%20and%20would%20like%20to%20inquire%20about%20an%20order." target="_blank" rel="noopener"
            class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-espresso/15 bg-white hover:bg-cream-warm text-espresso text-sm font-semibold transition-all">
           <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
           <span>Chat with Tracy</span>
@@ -182,28 +192,28 @@
         <div class="lg:col-span-7 text-center lg:text-left">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-espresso text-xs sm:text-sm font-semibold mb-6">
             <span class="text-gold-dark">★</span>
-            <span>Authentic Jamaican Heritage Recipes • Portmore Pickup</span>
+            <span>Authentic Jamaican Bakery &amp; Treats • Portmore Pickup</span>
           </div>
 
           <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-espresso tracking-tight leading-[1.1]">
-            Handcrafted Jamaican Cakes, <span class="italic text-gold-dark">Baked with Soul</span> in Portmore.
+            Handcrafted Jamaican Cakes, Loaves &amp; <span class="italic text-gold-dark">Sweet Treats</span> in Portmore.
           </h1>
 
           <p class="mt-5 text-base sm:text-lg text-espresso/75 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-            From rich, rum-soaked traditional Jamaican Black Cake aged to perfection to velvety celebration layer cakes—every creation is baked fresh to order by <strong class="font-semibold text-espresso">Tracy</strong>. Customize your cake online and send your order straight to WhatsApp in seconds.
+            From rich rum-soaked Jamaican Fruit Cakes and Sweet Potato Puddings to warm Banana Breads with free toppings, gourmet cookies, and custom birthday cakes—baked fresh by <strong class="font-semibold text-espresso">Tracy</strong> at <strong class="font-semibold text-espresso">SweetSip&amp;Bites</strong>.
           </p>
 
           <!-- Primary & Secondary CTAs -->
           <div class="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
             <a href="#menu"
                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-espresso hover:bg-espresso-light text-cream font-semibold text-base shadow-luxury transition-all active:scale-[0.98]">
-              <span>Explore Cake Menu</span>
+              <span>Explore Full Menu</span>
               <svg class="w-4 h-4 text-gold-light" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </a>
 
-            <a href="https://wa.me/18765059479?text=Hi%20Tracy!%20I%27d%20like%20to%20place%20a%20custom%20cake%20order." target="_blank" rel="noopener"
+            <a href="https://wa.me/18765059479?text=Hi%20Tracy!%20I%27d%20like%20to%20place%20a%20custom%20order%20with%20SweetSip%26Bites." target="_blank" rel="noopener"
                class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-white hover:bg-cream-warm text-espresso border border-espresso/15 font-semibold text-base shadow-sm transition-all">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
               <span>Message Tracy on WhatsApp</span>
@@ -247,15 +257,15 @@
               <div class="p-5 sm:p-6 bg-espresso text-cream">
                 <div class="flex items-center justify-between gap-4">
                   <div>
-                    <span class="text-[11px] uppercase tracking-widest text-gold-light font-semibold">Baker's Signature</span>
-                    <h2 class="font-serif text-xl sm:text-2xl font-bold mt-0.5">Traditional Jamaican Black Cake</h2>
+                    <span class="text-[11px] uppercase tracking-widest text-gold-light font-semibold">SweetSip&amp;Bites Signature</span>
+                    <h2 class="font-serif text-xl sm:text-2xl font-bold mt-0.5">Authentic Jamaican Fruit Cake</h2>
                   </div>
                   <span class="px-3 py-1.5 rounded-full bg-gold/20 border border-gold/40 text-gold-light text-xs font-bold whitespace-nowrap">
-                    From J$6,500
+                    From J$2,900
                   </span>
                 </div>
                 <p class="text-xs sm:text-sm text-cream/75 mt-2 line-clamp-2">
-                  Macerated raisins, prunes & currants steeped in aged Jamaican dark rum & red label wine.
+                  Steeped in aged Jamaican dark rum &amp; warm island spices—available in 1 lb, 2 lb, and 3 lb loaves or rounds.
                 </p>
               </div>
             </div>
@@ -267,7 +277,7 @@
   </section>
 
   <!-- ===================================================================== -->
-  <!-- SIGNATURE CAKE MENU & CUSTOMIZER                                      -->
+  <!-- SIGNATURE MENU & CUSTOMIZER                                           -->
   <!-- ===================================================================== -->
   <section id="menu" class="py-14 sm:py-20 bg-cream-warm/70 border-y border-espresso/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -275,32 +285,36 @@
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
         <div>
-          <span class="text-xs uppercase tracking-[0.2em] text-gold-dark font-bold">Baked in Portmore</span>
+          <span class="text-xs uppercase tracking-[0.2em] text-gold-dark font-bold">Freshly Baked in Portmore</span>
           <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso mt-1.5">
-            Signature Cake Collection
+            SweetSip&amp;Bites Menu
           </h2>
           <p class="text-sm sm:text-base text-espresso/70 mt-2 max-w-xl">
-            Tap <strong class="text-espresso">“Customize & Add”</strong> on any cake to select your preferred size, rum/dietary preference, and custom cake inscription.
+            Tap <strong class="text-espresso">“Select Options”</strong> on any item to choose your size, free toppings, flavors, or custom request notes.
           </p>
         </div>
 
         <!-- Category Filter Pills (Mobile Horizontally Scrollable) -->
-        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1" role="tablist" aria-label="Cake categories">
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1" role="tablist" aria-label="Menu categories">
           <button onclick="filterCategory('all')" data-cat="all"
                   class="cat-btn active px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all bg-espresso text-cream shadow-sm">
-            All Cakes
+            All Items
           </button>
-          <button onclick="filterCategory('rum')" data-cat="rum"
+          <button onclick="filterCategory('cakes')" data-cat="cakes"
                   class="cat-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all bg-white text-espresso/80 hover:bg-espresso/5 border border-espresso/10">
-            Rum & Fruit Classics
+            Cakes &amp; Puddings
           </button>
-          <button onclick="filterCategory('celebration')" data-cat="celebration"
+          <button onclick="filterCategory('loaves')" data-cat="loaves"
                   class="cat-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all bg-white text-espresso/80 hover:bg-espresso/5 border border-espresso/10">
-            Celebration Layer Cakes
+            Loaves &amp; Breads
+          </button>
+          <button onclick="filterCategory('bites')" data-cat="bites"
+                  class="cat-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all bg-white text-espresso/80 hover:bg-espresso/5 border border-espresso/10">
+            Bites &amp; Cookies
           </button>
           <button onclick="filterCategory('custom')" data-cat="custom"
                   class="cat-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all bg-white text-espresso/80 hover:bg-espresso/5 border border-espresso/10">
-            Custom Bespoke
+            Custom Orders
           </button>
         </div>
       </div>
@@ -333,9 +347,9 @@
           <div class="w-12 h-12 rounded-2xl bg-gold/15 text-gold-dark flex items-center justify-center font-serif text-2xl font-bold mb-5">
             1
           </div>
-          <h3 class="font-serif text-2xl font-bold text-espresso">Customize Your Cake</h3>
+          <h3 class="font-serif text-2xl font-bold text-espresso">Pick Your Treats</h3>
           <p class="text-sm text-espresso/70 mt-2.5 leading-relaxed">
-            Choose from authentic Jamaican Rum & Fruit classics or decadent celebration cakes. Select your size (6", 8", or 10"), rum level, and personalized cake message.
+            Mix and match Fruit Cakes, Rum Mini Cakes, Sweet Potato Puddings, Banana Breads with free toppings, Cookies, Cupcakes, or Custom Done-to-Order Cakes.
           </p>
         </div>
 
@@ -347,7 +361,7 @@
           </div>
           <h3 class="font-serif text-2xl font-bold text-cream">Free Portmore Pickup</h3>
           <p class="text-sm text-cream/80 mt-2.5 leading-relaxed">
-            Convenient, complimentary pickup in <strong class="text-gold-light">Portmore, St. Catherine</strong>. Need delivery to Kingston, Spanish Town, or elsewhere in Portmore? Select delivery at checkout for a quick courier quote from Tracy.
+            Enjoy complimentary pickup in <strong class="text-gold-light">Portmore, St. Catherine</strong>. Delivery across Portmore, Kingston &amp; St. Andrew is also available (courier fee confirmed via WhatsApp).
           </p>
         </div>
 
@@ -358,7 +372,7 @@
           </div>
           <h3 class="font-serif text-2xl font-bold text-espresso">Confirm via WhatsApp</h3>
           <p class="text-sm text-espresso/70 mt-2.5 leading-relaxed">
-            Please allow <strong>48–72 hours notice</strong> for fresh baking. Custom tiered or bespoke cakes require a 50% deposit to lock in your celebration date with Tracy.
+            Send your itemized order directly to Tracy on WhatsApp to confirm availability, custom quote items, and payment/deposit details.
           </p>
         </div>
       </div>
@@ -384,42 +398,42 @@
         <div class="p-6 sm:p-7 rounded-3xl bg-white border border-espresso/10 shadow-sm">
           <div class="text-gold text-sm tracking-widest mb-3">★★★★★</div>
           <p class="text-sm sm:text-base text-espresso/80 italic leading-relaxed">
-            “Tracy’s Jamaican Black Cake tastes just like Christmas morning in Mandeville—deep, moist, and properly soaked with authentic rum flavor. Portmore pickup was super smooth!”
+            “SweetSip&amp;Bites’ Fruit Cake and Rum Mini Cakes are unmatched! Deep, moist, and properly soaked with authentic Jamaican rum flavor. Portmore pickup was super smooth!”
           </p>
           <div class="mt-5 pt-4 border-t border-espresso/10 flex items-center justify-between">
             <div>
               <p class="font-semibold text-sm text-espresso">Simone B.</p>
               <p class="text-xs text-espresso/55">Greater Portmore</p>
             </div>
-            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-cream-warm text-espresso/75">Black Cake</span>
+            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-cream-warm text-espresso/75">Fruit Cake</span>
           </div>
         </div>
 
         <div class="p-6 sm:p-7 rounded-3xl bg-white border border-espresso/10 shadow-sm">
           <div class="text-gold text-sm tracking-widest mb-3">★★★★★</div>
           <p class="text-sm sm:text-base text-espresso/80 italic leading-relaxed">
-            “Ordered an 8-inch Red Velvet cake for my mom’s 60th birthday. Ordering straight through WhatsApp took two minutes, and the presentation blew everyone away.”
+            “Ordered the Banana Bread with walnuts and chocolate chips plus a dozen Red Velvet Chocolate Chip cookies. Fresh out of the oven and ordering on WhatsApp took seconds.”
           </p>
           <div class="mt-5 pt-4 border-t border-espresso/10 flex items-center justify-between">
             <div>
               <p class="font-semibold text-sm text-espresso">Andre M.</p>
               <p class="text-xs text-espresso/55">New Kingston</p>
             </div>
-            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-cream-warm text-espresso/75">Red Velvet</span>
+            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-cream-warm text-espresso/75">Banana Bread &amp; Cookies</span>
           </div>
         </div>
 
         <div class="p-6 sm:p-7 rounded-3xl bg-white border border-espresso/10 shadow-sm">
           <div class="text-gold text-sm tracking-widest mb-3">★★★★★</div>
           <p class="text-sm sm:text-base text-espresso/80 italic leading-relaxed">
-            “The Coconut Cream & Pineapple Upside-Down cake is unreal! Not overly sweet, super fresh, and Tracy was so warm and responsive on WhatsApp.”
+            “The 9-inch Sweet Potato Pudding and Carrot Loaf with cream cheese frosting were the star of Sunday dinner. Tracy is warm, responsive, and delivers true quality.”
           </p>
           <div class="mt-5 pt-4 border-t border-espresso/10 flex items-center justify-between">
             <div>
               <p class="font-semibold text-sm text-espresso">Kadian W.</p>
               <p class="text-xs text-espresso/55">Bridgeport, Portmore</p>
             </div>
-            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-cream-warm text-espresso/75">Coconut Pineapple</span>
+            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-cream-warm text-espresso/75">Sweet Potato Pudding</span>
           </div>
         </div>
       </div>
@@ -433,17 +447,17 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-cream/10">
         <div class="md:col-span-5">
-          <span class="font-serif text-2xl sm:text-3xl font-bold text-cream">Tracy’s Cakes</span>
+          <span class="font-serif text-2xl sm:text-3xl font-bold text-cream">SweetSip&amp;Bites</span>
           <p class="text-xs uppercase tracking-[0.2em] text-gold-light font-semibold mt-1">
             Portmore, St. Catherine • Jamaica
           </p>
           <p class="text-sm text-cream/70 mt-4 max-w-sm leading-relaxed">
-            Artisanal Jamaican cakes baked from scratch using premium local spices, aged Jamaican rum, and real butter.
+            Artisanal Jamaican cakes, puddings, loaves, cookies, and custom treats baked from scratch with warm island spices and aged Jamaican rum.
           </p>
         </div>
 
         <div class="md:col-span-4">
-          <h4 class="font-serif text-lg font-semibold text-gold-light">Pickup & Direct Contact</h4>
+          <h4 class="font-serif text-lg font-semibold text-gold-light">Pickup &amp; Direct Contact</h4>
           <ul class="mt-3 space-y-2.5 text-sm text-cream/80">
             <li class="flex items-center gap-2">
               <span class="text-gold">📍</span>
@@ -457,17 +471,17 @@
             </li>
             <li class="flex items-center gap-2">
               <span class="text-gold">🕒</span>
-              <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+              <span>Mon – Sat: 9:00 AM – 7:00 PM</span>
             </li>
           </ul>
         </div>
 
         <div class="md:col-span-3 flex flex-col justify-between">
           <div>
-            <h4 class="font-serif text-lg font-semibold text-gold-light">Ready to Order?</h4>
-            <p class="text-xs text-cream/70 mt-2">Have a custom design photo? Send it directly to Tracy on WhatsApp.</p>
+            <h4 class="font-serif text-lg font-semibold text-gold-light">Custom Inspiration?</h4>
+            <p class="text-xs text-cream/70 mt-2">Have a birthday cake photo or special treat request? Message Tracy directly on WhatsApp.</p>
           </div>
-          <a href="https://wa.me/18765059479?text=Hi%20Tracy!%20I%27d%20love%20to%20order%20a%20cake." target="_blank" rel="noopener"
+          <a href="https://wa.me/18765059479?text=Hi%20Tracy!%20I%27d%20love%20to%20place%20an%20order%20with%20SweetSip%26Bites." target="_blank" rel="noopener"
              class="mt-4 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gold hover:bg-gold-light text-espresso font-bold text-sm transition-colors">
             <span>Start WhatsApp Chat</span>
           </a>
@@ -475,7 +489,7 @@
       </div>
 
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-cream/50 gap-2">
-        <p>© <span id="year"></span> Tracy’s Cakes Jamaica. All rights reserved.</p>
+        <p>© <span id="year"></span> SweetSip&amp;Bites Jamaica. All rights reserved.</p>
         <p>Handcrafted in Portmore • Powered by WhatsApp Direct Ordering</p>
       </div>
     </div>
@@ -493,7 +507,7 @@
             0
           </span>
           <div class="text-left">
-            <span class="block text-xs text-cream/75 leading-none">Your Cake Order</span>
+            <span class="block text-xs text-cream/75 leading-none">Your Order Bag</span>
             <span id="mobile-bar-total" class="block text-sm font-bold text-gold-light mt-0.5">J$0</span>
           </div>
         </div>
@@ -508,7 +522,7 @@
   </div>
 
   <!-- ===================================================================== -->
-  <!-- CAKE CUSTOMIZATION MODAL (SIZE, RUM LEVEL, INSCRIPTION)               -->
+  <!-- PRODUCT CUSTOMIZATION MODAL (DYNAMIC VARIANTS, TOPPINGS & NOTES)      -->
   <!-- ===================================================================== -->
   <div id="customizer-modal" class="fixed inset-0 z-50 hidden" aria-modal="true" role="dialog">
     <!-- Backdrop -->
@@ -521,7 +535,7 @@
         <!-- Modal Header Image & Close -->
         <div class="relative h-44 sm:h-52 bg-espresso shrink-0">
           <img id="modal-cake-img" src="" alt="" class="w-full h-full object-cover opacity-90" />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/35 to-transparent"></div>
           <button onclick="closeCustomizer()" aria-label="Close modal"
                   class="absolute top-4 right-4 w-9 h-9 rounded-full bg-espresso/80 text-cream hover:bg-espresso flex items-center justify-center backdrop-blur-md">
             ✕
@@ -536,40 +550,48 @@
         <div class="p-5 sm:p-6 overflow-y-auto space-y-5">
           <p id="modal-cake-desc" class="text-xs sm:text-sm text-espresso/75 leading-relaxed"></p>
 
-          <!-- Step 1: Size Selection -->
-          <div>
-            <label class="block text-xs uppercase tracking-wider font-bold text-espresso mb-2.5">
-              1. Choose Cake Size
+          <!-- Step 1: Size / Pack Selection -->
+          <div id="modal-size-section">
+            <label id="modal-size-label" class="block text-xs uppercase tracking-wider font-bold text-espresso mb-2.5">
+              1. Choose Size / Pack
             </label>
             <div id="modal-size-options" class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
               <!-- Populated dynamically -->
             </div>
           </div>
 
-          <!-- Step 2: Rum / Flavor Preference -->
-          <div>
-            <label for="modal-preference" class="block text-xs uppercase tracking-wider font-bold text-espresso mb-2">
-              2. Flavor / Rum Preference
-            </label>
-            <select id="modal-preference"
+          <!-- Step 2: Dynamic Option Selector (Flavors, Prep, or Free Toppings) -->
+          <div id="modal-option-section" class="hidden">
+            <div class="flex items-center justify-between mb-2">
+              <label id="modal-option-label" for="modal-option-select" class="block text-xs uppercase tracking-wider font-bold text-espresso">
+                2. Select Option
+              </label>
+              <span id="modal-option-tag" class="hidden text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-tropical/15 text-tropical font-bold">
+                FREE TOPPINGS
+              </span>
+            </div>
+
+            <!-- Dropdown mode (for single choice like Cookie flavor or Rum prep) -->
+            <select id="modal-option-select"
                     class="w-full px-3.5 py-3 rounded-xl bg-white border border-espresso/15 text-sm text-espresso font-medium focus:outline-none focus:border-gold">
-              <option value="Signature Recipe (Standard)">Signature Recipe (Tracy's Standard)</option>
-              <option value="Extra Aged Jamaican Rum Soak">Extra Aged Jamaican Rum Soak</option>
-              <option value="Non-Alcoholic / Alcohol-Free">Non-Alcoholic / Alcohol-Free</option>
-              <option value="Nut-Free Preparation">Nut-Free Preparation</option>
             </select>
+
+            <!-- Multi-select pills mode (for Banana Bread Free Toppings) -->
+            <div id="modal-multi-toppings" class="hidden flex-wrap gap-2 mt-1">
+              <!-- Populated dynamically -->
+            </div>
           </div>
 
-          <!-- Step 3: Custom Cake Inscription -->
+          <!-- Step 3: Custom Note / Inscription / Tiers -->
           <div>
             <div class="flex items-center justify-between mb-1.5">
-              <label for="modal-inscription" class="text-xs uppercase tracking-wider font-bold text-espresso">
-                3. Cake Inscription (Optional)
+              <label id="modal-note-label" for="modal-inscription" class="text-xs uppercase tracking-wider font-bold text-espresso">
+                Custom Note / Inscription (Optional)
               </label>
-              <span class="text-[11px] text-espresso/50">Free Piping</span>
+              <span id="modal-note-hint" class="text-[11px] text-espresso/50">Optional</span>
             </div>
-            <input id="modal-inscription" type="text" maxlength="45"
-                   placeholder='e.g., "Happy Birthday Marcia!" or "Congrats!"'
+            <input id="modal-inscription" type="text" maxlength="80"
+                   placeholder='e.g., "Happy Birthday!" or flavor preference'
                    class="w-full px-3.5 py-3 rounded-xl bg-white border border-espresso/15 text-sm text-espresso placeholder:text-espresso/40 focus:outline-none focus:border-gold" />
           </div>
 
@@ -589,7 +611,7 @@
           <button onclick="addConfiguredItemToCart()"
                   class="w-full py-3.5 px-6 rounded-full bg-espresso hover:bg-espresso-light text-cream font-bold text-sm sm:text-base flex items-center justify-between shadow-gold-glow transition-all active:scale-[0.99]">
             <span>Add to Order Bag</span>
-            <span id="modal-live-price" class="text-gold-light font-extrabold">J$6,500</span>
+            <span id="modal-live-price" class="text-gold-light font-extrabold">J$2,900</span>
           </button>
         </div>
 
@@ -610,7 +632,7 @@
       <!-- Drawer Header -->
       <div class="px-5 py-4 bg-espresso text-cream flex items-center justify-between shrink-0">
         <div>
-          <h3 class="font-serif text-2xl font-bold leading-none">Your Cake Order</h3>
+          <h3 class="font-serif text-2xl font-bold leading-none">Your SweetSip&amp;Bites Order</h3>
           <p class="text-xs text-gold-light mt-1">Direct WhatsApp Checkout with Tracy</p>
         </div>
         <button onclick="closeCart()" aria-label="Close order bag"
@@ -629,7 +651,7 @@
 
         <!-- Checkout Details Form (Visible when cart has items) -->
         <div id="checkout-form-section" class="hidden pt-4 border-t border-espresso/15 space-y-4">
-          <h4 class="font-serif text-xl font-bold text-espresso">Pickup & Customer Details</h4>
+          <h4 class="font-serif text-xl font-bold text-espresso">Pickup &amp; Customer Details</h4>
 
           <!-- Customer Name -->
           <div>
@@ -655,10 +677,10 @@
               </label>
 
               <label class="flex items-start gap-3 p-3 rounded-xl bg-white border border-espresso/15 cursor-pointer has-[:checked]:border-gold has-[:checked]:bg-gold/10">
-                <input type="radio" name="fulfillment" value="Delivery (Portmore / Kingston & St. Andrew - Fee confirmed on WhatsApp)" class="mt-0.5 accent-espresso" />
+                <input type="radio" name="fulfillment" value="Delivery (Portmore / Kingston & St. Andrew - Fee confirmed via WhatsApp)" class="mt-0.5 accent-espresso" />
                 <div class="text-xs">
-                  <span class="block font-bold text-espresso text-sm">Island / Local Delivery</span>
-                  <span class="text-espresso/70">Portmore, Kingston & St. Andrew (Courier fee confirmed by Tracy).</span>
+                  <span class="block font-bold text-espresso text-sm">Delivery (Portmore / Kingston &amp; St. Andrew)</span>
+                  <span class="text-espresso/70">Courier delivery fee confirmed via WhatsApp by Tracy.</span>
                 </div>
               </label>
             </div>
@@ -681,7 +703,7 @@
                       class="w-full px-3 py-2.5 rounded-xl bg-white border border-espresso/15 text-xs sm:text-sm text-espresso focus:outline-none focus:border-gold">
                 <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
                 <option value="Afternoon (12 PM - 4 PM)" selected>Afternoon (12 PM - 4 PM)</option>
-                <option value="Evening (4 PM - 6 PM)">Evening (4 PM - 6 PM)</option>
+                <option value="Evening (4 PM - 7 PM)">Evening (4 PM - 7 PM)</option>
               </select>
             </div>
           </div>
@@ -689,9 +711,9 @@
           <!-- Special Notes -->
           <div>
             <label for="cust-notes" class="block text-xs font-bold uppercase tracking-wider text-espresso mb-1">
-              Theme Colors / Delivery Area / Notes
+              Special Order Notes / Delivery Landmark
             </label>
-            <textarea id="cust-notes" rows="2" placeholder="Any color theme, allergies, or delivery landmark..."
+            <textarea id="cust-notes" rows="2" placeholder="Any allergies, theme details, or delivery area..."
                       class="w-full px-3.5 py-2 rounded-xl bg-white border border-espresso/15 text-sm text-espresso focus:outline-none focus:border-gold"></textarea>
           </div>
         </div>
@@ -699,9 +721,14 @@
 
       <!-- Drawer Footer Checkout Buttons -->
       <div id="cart-footer" class="hidden p-5 bg-white border-t border-espresso/10 space-y-2.5 shrink-0">
-        <div class="flex items-center justify-between text-sm mb-1">
-          <span class="text-espresso/70 font-medium">Estimated Subtotal</span>
-          <span id="cart-subtotal" class="font-serif text-2xl font-bold text-espresso">J$0</span>
+        <div>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-espresso/70 font-medium">Estimated Subtotal</span>
+            <span id="cart-subtotal" class="font-serif text-2xl font-bold text-espresso">J$0</span>
+          </div>
+          <p id="cart-quote-disclaimer" class="hidden text-[11px] text-gold-dark font-semibold mt-0.5">
+            * Includes custom quote item(s) — final price confirmed by Tracy on WhatsApp.
+          </p>
         </div>
 
         <button onclick="submitOrderToWhatsApp()"
@@ -733,93 +760,217 @@
   <!-- ===================================================================== -->
   <script>
     // =========================================================================
-    // 1. BUSINESS & PRODUCT CATALOG DATA
+    // 1. BUSINESS & PRODUCT CATALOG DATA (SWEETSIP&BITES)
     // =========================================================================
     const WHATSAPP_NUMBER = "18765059479";
 
-    const CAKES = [
+    const MENU_ITEMS = [
       {
-        id: "jamaican-black-cake",
-        name: "Traditional Jamaican Black Cake",
-        category: "rum",
-        badge: "Best Seller",
-        description: "Our signature heirloom recipe. Currants, prunes, and raisins macerated for months in aged Jamaican dark rum and Red Label wine, baked into a velvety, warm-spiced dark crumb.",
+        id: "fruit-cakes",
+        name: "Fruit Cakes",
+        category: "cakes",
+        badge: "Jamaican Classic",
+        description: "Authentic rich Jamaican fruit cake steeped in aged rum and warm island spices.",
         image: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=800&q=80",
-        fallbackText: "Jamaican+Black+Cake",
+        fallbackText: "Jamaican+Fruit+Cakes",
+        optionType: "select",
+        optionLabel: "2. Preparation Preference",
+        options: [
+          "Traditional Rum-Soaked",
+          "Non-Alcoholic"
+        ],
+        noteLabel: "3. Cake Inscription / Note (Optional)",
+        notePlaceholder: 'e.g., "Happy Holidays!" or gift tag note',
         sizes: [
-          { label: '6" Petite', serves: "8–10 slices", price: 6500 },
-          { label: '8" Classic', serves: "14–16 slices", price: 9500 },
-          { label: '10" Celebration', serves: "24–28 slices", price: 13500 }
+          { label: "1 lb", sub: "Classic Loaf/Round", price: 2900 },
+          { label: "2 lb", sub: "Family Size", price: 3800 },
+          { label: "3 lb", sub: "Celebration Size", price: 4800 }
         ]
       },
       {
-        id: "rum-raisin-fruit-cake",
-        name: "Golden Rum & Raisin Fruit Cake",
-        category: "rum",
-        badge: "Island Classic",
-        description: "Rich golden butter cake studded with plump rum-soaked raisins, candied citrus peel, and freshly grated nutmeg, finished with a warm dark rum glaze.",
+        id: "rum-infused-mini-cakes",
+        name: "Rum Infused Mini Cakes",
+        category: "cakes",
+        badge: "Rum Infused",
+        description: "Bite-sized decadence packed with rich dark Jamaican rum flavor.",
         image: "https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=800&q=80",
-        fallbackText: "Rum+%26+Raisin+Cake",
+        fallbackText: "Rum+Infused+Mini+Cakes",
+        optionType: "select",
+        optionLabel: "2. Rum Infusion Level",
+        options: [
+          "Signature Dark Rum Infused",
+          "Extra Rum Glaze"
+        ],
+        noteLabel: "3. Special Note (Optional)",
+        notePlaceholder: "Any gift box or packaging note...",
         sizes: [
-          { label: '6" Petite', serves: "8–10 slices", price: 5800 },
-          { label: '8" Classic', serves: "14–16 slices", price: 8500 },
-          { label: '10" Celebration', serves: "24–28 slices", price: 12000 }
+          { label: "Small", sub: "Individual Treat", price: 850 },
+          { label: "Medium", sub: "Generous Mini", price: 1200 },
+          { label: "Large", sub: "Shareable Mini", price: 1800 }
         ]
       },
       {
-        id: "jamaican-carrot-cake",
-        name: "Spiced Jamaican Carrot Cake",
-        category: "celebration",
+        id: "sweet-potato-puddings",
+        name: "Sweet Potato Puddings",
+        category: "cakes",
+        badge: "Island Heritage",
+        description: "Traditional Jamaican sweet potato pudding baked to a golden, velvety crust with coconut milk and warm spices.",
+        image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
+        fallbackText: "Sweet+Potato+Pudding",
+        optionType: "select",
+        optionLabel: "2. Style Preference",
+        options: [
+          "Classic Raisin & Spiced Custard Top",
+          "No Raisins"
+        ],
+        noteLabel: "3. Special Note (Optional)",
+        notePlaceholder: "Any dietary or serving note...",
+        sizes: [
+          { label: "8 inch", sub: "8–10 slices", price: 2100 },
+          { label: "9 inch", sub: "12–14 slices", price: 3500 }
+        ]
+      },
+      {
+        id: "banana-breads",
+        name: "Banana Breads",
+        category: "loaves",
+        badge: "Free Toppings",
+        description: "Moist, freshly baked ripe banana bread. Toppings are FREE — customize with peanuts, walnuts, or chocolate chips!",
+        image: "https://images.unsplash.com/photo-1605286978633-2dec93ff88a2?auto=format&fit=crop&w=800&q=80",
+        fallbackText: "Jamaican+Banana+Bread",
+        optionType: "multi-toppings",
+        optionLabel: "2. Choose Free Toppings",
+        freeToppingsBadge: true,
+        toppingsList: [
+          "Peanuts",
+          "Walnuts",
+          "Chocolate Chips",
+          "Plain (No Toppings)"
+        ],
+        noteLabel: "3. Baking Note (Optional)",
+        notePlaceholder: "e.g., Sliced or whole loaf...",
+        sizes: [
+          { label: "Small", sub: "Personal Loaf", price: 700 },
+          { label: "Medium", sub: "Classic Loaf", price: 1050 },
+          { label: "Large", sub: "Family Loaf", price: 1200 }
+        ]
+      },
+      {
+        id: "carrot-loafs-cream-cheese",
+        name: "Carrot Loafs with Cream Cheese",
+        category: "loaves",
         badge: "Customer Favorite",
-        description: "Ultra-moist grated carrot cake infused with cinnamon, nutmeg, crushed pineapple, and toasted pecans, layered generously with silky Madagascar vanilla cream cheese frosting.",
+        description: "Spiced Jamaican carrot loaf topped with smooth, rich cream cheese frosting.",
         image: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=800&q=80",
-        fallbackText: "Jamaican+Carrot+Cake",
+        fallbackText: "Carrot+Loaf+Cream+Cheese",
+        optionType: "select",
+        optionLabel: "2. Garnish Preference",
+        options: [
+          "Cream Cheese Frosting (Standard)",
+          "Cream Cheese + Crushed Nuts",
+          "Nut-Free Preparation"
+        ],
+        noteLabel: "3. Special Note (Optional)",
+        notePlaceholder: "Any special instructions...",
         sizes: [
-          { label: '6" Petite', serves: "8–10 slices", price: 6200 },
-          { label: '8" Classic', serves: "14–16 slices", price: 9000 },
-          { label: '10" Celebration', serves: "24–28 slices", price: 12800 }
+          { label: "Medium", sub: "Classic Frosted Loaf", price: 1050 },
+          { label: "Large", sub: "Large Frosted Loaf", price: 1500 }
         ]
       },
       {
-        id: "coconut-pineapple-cake",
-        name: "Coconut Cream & Pineapple Upside-Down",
-        category: "celebration",
-        badge: "Tropical Luxury",
-        description: "Caramelized sweet Jamaican pineapple rings over tender coconut-milk sponge, finished with toasted coconut flakes and whipped vanilla bean cream.",
-        image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=800&q=80",
-        fallbackText: "Coconut+%26+Pineapple+Cake",
+        id: "cookies",
+        name: "Cookies",
+        category: "bites",
+        badge: "Freshly Baked",
+        description: "Freshly baked soft and chewy gourmet cookies in Red Velvet Chocolate Chip, Chocolate Chip, or Oatmeal Chocolate Chip Mini Balls.",
+        image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
+        fallbackText: "Gourmet+Cookies",
+        optionType: "select",
+        optionLabel: "2. Select Cookie Flavor",
+        options: [
+          "Assorted Mix (All 3 Flavors)",
+          "Red Velvet Chocolate Chip",
+          "Chocolate Chip",
+          "Oatmeal Chocolate Chip Mini Balls"
+        ],
+        noteLabel: "3. Mix Preferences (Optional)",
+        notePlaceholder: "e.g., Extra Red Velvet in assorted box...",
         sizes: [
-          { label: '6" Petite', serves: "8–10 slices", price: 6000 },
-          { label: '8" Classic', serves: "14–16 slices", price: 8800 },
-          { label: '10" Celebration', serves: "24–28 slices", price: 12500 }
+          { label: "6 Cookies", sub: "Half Dozen", price: 900 },
+          { label: "12 Cookies", sub: "1 Dozen", price: 1800 },
+          { label: "Assorted Box", sub: "Party Variety Box", price: 2200 }
         ]
       },
       {
-        id: "red-velvet-luxury",
-        name: "Velvet Cocoa Luxury Layer Cake",
-        category: "celebration",
-        badge: "Celebration Hit",
-        description: "Plush crimson cocoa sponge with a hint of buttermilk tang, stacked three layers high with our signature whipped cream cheese buttercream.",
-        image: "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=800&q=80",
-        fallbackText: "Red+Velvet+Layer+Cake",
+        id: "cupcakes",
+        name: "Cupcakes",
+        category: "bites",
+        badge: "Party & Treats",
+        description: "Fluffy, handcrafted party and treat cupcakes with signature buttercream swirls.",
+        image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=800&q=80",
+        fallbackText: "Artisanal+Cupcakes",
+        optionType: "select",
+        optionLabel: "2. Base Flavor Preference",
+        options: [
+          "Vanilla Bean Swirl",
+          "Rich Chocolate",
+          "Red Velvet",
+          "Assorted Flavors"
+        ],
+        noteLabel: "3. Color Theme / Flavor Note (Optional)",
+        notePlaceholder: "e.g., Pink & gold swirls, or custom flavor...",
         sizes: [
-          { label: '6" Petite', serves: "8–10 slices", price: 6500 },
-          { label: '8" Classic', serves: "14–16 slices", price: 9200 },
-          { label: '10" Celebration', serves: "24–28 slices", price: 13200 }
+          { label: "6 Cupcakes", sub: "Half Dozen Box", price: 700 },
+          { label: "12 Cupcakes", sub: "1 Dozen Box", price: 1000 },
+          { label: "24 Cupcakes", sub: "2 Dozen Party Pack", price: 1800 }
         ]
       },
       {
-        id: "custom-celebration-cake",
-        name: "Custom Birthday & Milestone Cake",
+        id: "birthday-cakes",
+        name: "Birthday Cakes — Done to Order",
         category: "custom",
-        badge: "Bespoke Design",
-        description: "Tailored to your celebration theme! Choose your base size and inscription here, then share inspiration photos or color palettes directly with Tracy on WhatsApp.",
+        badge: "Custom Quote",
+        isCustomQuote: true,
+        customPriceLabel: "Prices Vary (Quote on WhatsApp)",
+        description: "Custom celebration birthday cakes baked and decorated to order. Share your desired size, tiers, flavor, and theme—Tracy will confirm your exact quote on WhatsApp.",
         image: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=800&q=80",
-        fallbackText: "Custom+Celebration+Cake",
+        fallbackText: "Custom+Birthday+Cakes",
+        optionType: "select",
+        optionLabel: "2. Preferred Cake Size / Tiers",
+        options: [
+          "6\" Single Tier (Custom Quote)",
+          "8\" Single Tier (Custom Quote)",
+          "10\" Single Tier (Custom Quote)",
+          "2-Tier / Multi-Tier Celebration Cake"
+        ],
+        noteLabel: "3. Flavor, Theme & Cake Inscription *",
+        notePlaceholder: 'e.g., "Chocolate & Vanilla, Gold/Black theme, Happy 30th!"',
         sizes: [
-          { label: '6" Single Tier', serves: "10–12 slices", price: 7500 },
-          { label: '8" Tall Luxury', serves: "18–22 slices", price: 11000 },
-          { label: '10" Grand Party', serves: "28–35 slices", price: 15500 }
+          { label: "Done to Order", sub: "Quote confirmed on WhatsApp", price: 0, isQuote: true }
+        ]
+      },
+      {
+        id: "edibles",
+        name: "Edibles — Done to Order",
+        category: "custom",
+        badge: "Custom Quote",
+        isCustomQuote: true,
+        customPriceLabel: "Done to Order (Quote on WhatsApp)",
+        description: "Infused artisanal treats crafted discreetly to order. Add to your bag with your preferred treat type and quantity to get a private quote from Tracy on WhatsApp.",
+        image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
+        fallbackText: "Custom+Edibles+Done+to+Order",
+        optionType: "select",
+        optionLabel: "2. Preferred Treat Style",
+        options: [
+          "Infused Brownies / Bars",
+          "Infused Cookies",
+          "Infused Mini Cakes / Cupcakes",
+          "Custom Request (Specify Below)"
+        ],
+        noteLabel: "3. Quantity & Custom Request Details",
+        notePlaceholder: "Specify pack size, potency preference, or custom notes...",
+        sizes: [
+          { label: "Done to Order", sub: "Quote confirmed on WhatsApp", price: 0, isQuote: true }
         ]
       }
     ];
@@ -829,8 +980,9 @@
     // =========================================================================
     let cart = [];
     let currentCategory = "all";
-    let activeCake = null;
-    let selectedSizeIndex = 1; // Default to 8" Classic
+    let activeItem = null;
+    let selectedSizeIndex = 0;
+    let selectedToppings = ["Peanuts"];
     let modalQty = 1;
 
     // =========================================================================
@@ -857,50 +1009,68 @@
     function renderMenu() {
       const grid = document.getElementById("menu-grid");
       const filtered = currentCategory === "all"
-        ? CAKES
-        : CAKES.filter(c => c.category === currentCategory);
+        ? MENU_ITEMS
+        : MENU_ITEMS.filter(item => item.category === currentCategory);
 
-      grid.innerHTML = filtered.map(cake => {
-        const startingPrice = formatJMD(cake.sizes[0].price);
+      grid.innerHTML = filtered.map(item => {
+        const isQuote = Boolean(item.isCustomQuote);
+        const priceDisplay = isQuote
+          ? `<span class="font-serif text-lg sm:text-xl font-bold text-gold-dark">${item.customPriceLabel}</span>`
+          : `<span class="block text-[11px] uppercase tracking-wider text-espresso/50 font-semibold">Starting at</span>
+             <span class="font-serif text-2xl font-bold text-espresso">${formatJMD(item.sizes[0].price)}</span>`;
+
+        // Preview variant pills on card for quick price visibility
+        const variantPills = !isQuote
+          ? `<div class="flex flex-wrap gap-1.5 mt-3">
+               ${item.sizes.map(s => `
+                 <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-cream-warm text-espresso/80 border border-espresso/10">
+                   ${s.label}: <strong class="text-espresso">${formatJMD(s.price)}</strong>
+                 </span>
+               `).join("")}
+             </div>`
+          : `<div class="mt-3">
+               <span class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-gold/15 text-gold-dark border border-gold/30">
+                 Custom Made • Quote via WhatsApp
+               </span>
+             </div>`;
+
         return `
           <article class="group bg-white rounded-3xl overflow-hidden border border-espresso/10 shadow-sm hover:shadow-luxury transition-all duration-300 flex flex-col">
-            <!-- Cake Image -->
+            <!-- Product Image -->
             <div class="relative aspect-[4/3] overflow-hidden bg-cream-warm">
               <img
-                src="${cake.image}"
-                alt="${cake.name}"
+                src="${item.image}"
+                alt="${item.name}"
                 loading="lazy"
-                onerror="this.onerror=null; this.src='https://placehold.co/800x600/2C1810/DFB362?text=${cake.fallbackText}';"
+                onerror="this.onerror=null; this.src='https://placehold.co/800x600/1F140E/DFB362?text=${item.fallbackText}';"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/90 backdrop-blur-md text-gold-light text-[11px] font-bold tracking-wide uppercase">
-                ${cake.badge}
+              <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full ${item.freeToppingsBadge ? "bg-tropical text-white" : "bg-espresso/90 text-gold-light"} backdrop-blur-md text-[11px] font-bold tracking-wide uppercase">
+                ${item.badge}
               </span>
             </div>
 
             <!-- Card Body -->
             <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
               <div>
-                <div class="flex items-start justify-between gap-3">
-                  <h3 class="font-serif text-2xl font-bold text-espresso leading-snug">
-                    ${cake.name}
-                  </h3>
-                </div>
-                <p class="text-xs sm:text-sm text-espresso/70 mt-2.5 leading-relaxed">
-                  ${cake.description}
+                <h3 class="font-serif text-2xl font-bold text-espresso leading-snug">
+                  ${item.name}
+                </h3>
+                <p class="text-xs sm:text-sm text-espresso/70 mt-2 leading-relaxed">
+                  ${item.description}
                 </p>
+                ${variantPills}
               </div>
 
-              <!-- Price & Customize Trigger -->
-              <div class="mt-6 pt-4 border-t border-espresso/10 flex items-center justify-between gap-3">
+              <!-- Price & Select Trigger -->
+              <div class="mt-5 pt-4 border-t border-espresso/10 flex items-center justify-between gap-3">
                 <div>
-                  <span class="block text-[11px] uppercase tracking-wider text-espresso/50 font-semibold">Starting at</span>
-                  <span class="font-serif text-2xl font-bold text-espresso">${startingPrice}</span>
+                  ${priceDisplay}
                 </div>
 
-                <button onclick="openCustomizer('${cake.id}')"
-                        class="px-4 sm:px-5 py-2.5 sm:py-3 rounded-full bg-espresso hover:bg-gold hover:text-espresso text-cream text-xs sm:text-sm font-bold transition-colors shadow-sm active:scale-95">
-                  Customize & Add
+                <button onclick="openCustomizer('${item.id}')"
+                        class="shrink-0 px-4 sm:px-5 py-2.5 sm:py-3 rounded-full bg-espresso hover:bg-gold hover:text-espresso text-cream text-xs sm:text-sm font-bold transition-colors shadow-sm active:scale-95">
+                  Select Options
                 </button>
               </div>
             </div>
@@ -925,29 +1095,73 @@
     // =========================================================================
     // 5. CUSTOMIZER MODAL LOGIC
     // =========================================================================
-    function openCustomizer(cakeId) {
-      activeCake = CAKES.find(c => c.id === cakeId);
-      if (!activeCake) return;
+    function openCustomizer(itemId) {
+      activeItem = MENU_ITEMS.find(i => i.id === itemId);
+      if (!activeItem) return;
 
-      selectedSizeIndex = 1; // Default to 8" Classic
+      selectedSizeIndex = 0;
       modalQty = 1;
+      selectedToppings = ["Peanuts"];
 
       const imgEl = document.getElementById("modal-cake-img");
-      imgEl.src = activeCake.image;
+      imgEl.src = activeItem.image;
       imgEl.onerror = () => {
-        imgEl.src = `https://placehold.co/800x500/2C1810/DFB362?text=${activeCake.fallbackText}`;
+        imgEl.src = `https://placehold.co/800x500/1F140E/DFB362?text=${activeItem.fallbackText}`;
       };
 
-      document.getElementById("modal-cake-badge").textContent = activeCake.badge;
-      document.getElementById("modal-cake-title").textContent = activeCake.name;
-      document.getElementById("modal-cake-desc").textContent = activeCake.description;
-      document.getElementById("modal-inscription").value = "";
-      document.getElementById("modal-preference").selectedIndex = 0;
+      document.getElementById("modal-cake-badge").textContent = activeItem.badge;
+      document.getElementById("modal-cake-title").textContent = activeItem.name;
+      document.getElementById("modal-cake-desc").textContent = activeItem.description;
       document.getElementById("modal-qty").textContent = modalQty;
 
-      renderSizeOptions();
-      updateModalPrice();
+      // Note input setup
+      const noteInput = document.getElementById("modal-inscription");
+      document.getElementById("modal-note-label").textContent = activeItem.noteLabel || "Custom Note (Optional)";
+      document.getElementById("modal-note-hint").textContent = activeItem.isCustomQuote ? "Helpful for quote" : "Optional";
+      noteInput.placeholder = activeItem.notePlaceholder || "Any special instructions...";
+      noteInput.value = "";
 
+      // Size / Variant Section
+      const sizeSection = document.getElementById("modal-size-section");
+      if (activeItem.isCustomQuote) {
+        sizeSection.classList.add("hidden");
+      } else {
+        sizeSection.classList.remove("hidden");
+        renderSizeOptions();
+      }
+
+      // Option Selector (Dropdown vs Multi-Select Free Toppings)
+      const optSection = document.getElementById("modal-option-section");
+      const optSelect = document.getElementById("modal-option-select");
+      const multiContainer = document.getElementById("modal-multi-toppings");
+      const freeTag = document.getElementById("modal-option-tag");
+
+      if (activeItem.optionType) {
+        optSection.classList.remove("hidden");
+        document.getElementById("modal-option-label").textContent = activeItem.optionLabel;
+
+        if (activeItem.freeToppingsBadge) {
+          freeTag.classList.remove("hidden");
+        } else {
+          freeTag.classList.add("hidden");
+        }
+
+        if (activeItem.optionType === "multi-toppings") {
+          optSelect.classList.add("hidden");
+          multiContainer.classList.remove("hidden");
+          multiContainer.classList.add("flex");
+          renderMultiToppings();
+        } else {
+          multiContainer.classList.add("hidden");
+          multiContainer.classList.remove("flex");
+          optSelect.classList.remove("hidden");
+          optSelect.innerHTML = activeItem.options.map(opt => `<option value="${opt}">${opt}</option>`).join("");
+        }
+      } else {
+        optSection.classList.add("hidden");
+      }
+
+      updateModalPrice();
       document.getElementById("customizer-modal").classList.remove("hidden");
       document.body.style.overflow = "hidden";
     }
@@ -959,7 +1173,10 @@
 
     function renderSizeOptions() {
       const container = document.getElementById("modal-size-options");
-      container.innerHTML = activeCake.sizes.map((sz, idx) => {
+      const colsClass = activeItem.sizes.length === 2 ? "grid-cols-2" : "grid-cols-1 sm:grid-cols-3";
+      container.className = `grid ${colsClass} gap-2.5`;
+
+      container.innerHTML = activeItem.sizes.map((sz, idx) => {
         const selected = idx === selectedSizeIndex;
         return `
           <button type="button" onclick="selectSize(${idx})"
@@ -969,11 +1186,46 @@
                       : "bg-white text-espresso border-espresso/15 hover:border-gold"
                   }">
             <span class="block text-xs sm:text-sm font-bold">${sz.label}</span>
-            <span class="block text-[11px] ${selected ? "text-cream/75" : "text-espresso/55"} mt-0.5">${sz.serves}</span>
+            <span class="block text-[11px] ${selected ? "text-cream/75" : "text-espresso/55"} mt-0.5">${sz.sub}</span>
             <span class="block text-xs font-extrabold ${selected ? "text-gold-light" : "text-gold-dark"} mt-1.5">${formatJMD(sz.price)}</span>
           </button>
         `;
       }).join("");
+    }
+
+    function renderMultiToppings() {
+      const container = document.getElementById("modal-multi-toppings");
+      container.innerHTML = activeItem.toppingsList.map(topping => {
+        const isChecked = selectedToppings.includes(topping);
+        return `
+          <button type="button" onclick="toggleTopping('${topping}')"
+                  class="px-3.5 py-2 rounded-full text-xs font-semibold border transition-all flex items-center gap-1.5 ${
+                    isChecked
+                      ? "bg-espresso text-cream border-espresso shadow-sm"
+                      : "bg-white text-espresso/80 border-espresso/15 hover:border-gold"
+                  }">
+            <span>${isChecked ? "✓" : "+"}</span>
+            <span>${topping}</span>
+          </button>
+        `;
+      }).join("");
+    }
+
+    function toggleTopping(topping) {
+      if (topping === "Plain (No Toppings)") {
+        selectedToppings = ["Plain (No Toppings)"];
+      } else {
+        selectedToppings = selectedToppings.filter(t => t !== "Plain (No Toppings)");
+        if (selectedToppings.includes(topping)) {
+          selectedToppings = selectedToppings.filter(t => t !== topping);
+        } else {
+          selectedToppings.push(topping);
+        }
+        if (selectedToppings.length === 0) {
+          selectedToppings = ["Plain (No Toppings)"];
+        }
+      }
+      renderMultiToppings();
     }
 
     function selectSize(idx) {
@@ -983,35 +1235,47 @@
     }
 
     function adjustModalQty(delta) {
-      modalQty = Math.max(1, Math.min(15, modalQty + delta));
+      modalQty = Math.max(1, Math.min(20, modalQty + delta));
       document.getElementById("modal-qty").textContent = modalQty;
       updateModalPrice();
     }
 
     function updateModalPrice() {
-      const unitPrice = activeCake.sizes[selectedSizeIndex].price;
-      document.getElementById("modal-live-price").textContent = formatJMD(unitPrice * modalQty);
+      const priceEl = document.getElementById("modal-live-price");
+      if (activeItem.isCustomQuote) {
+        priceEl.textContent = "Custom Quote";
+      } else {
+        const unitPrice = activeItem.sizes[selectedSizeIndex].price;
+        priceEl.textContent = formatJMD(unitPrice * modalQty);
+      }
     }
 
     function addConfiguredItemToCart() {
-      const sizeObj = activeCake.sizes[selectedSizeIndex];
-      const preference = document.getElementById("modal-preference").value;
-      const inscription = document.getElementById("modal-inscription").value.trim();
+      const sizeObj = activeItem.sizes[selectedSizeIndex];
+      const customNote = document.getElementById("modal-inscription").value.trim();
+
+      let chosenOption = "";
+      if (activeItem.optionType === "multi-toppings") {
+        chosenOption = "Free Toppings: " + selectedToppings.join(", ");
+      } else if (activeItem.optionType === "select") {
+        chosenOption = document.getElementById("modal-option-select").value;
+      }
 
       cart.push({
         uid: Date.now() + Math.random().toString(36).slice(2, 6),
-        cakeId: activeCake.id,
-        name: activeCake.name,
+        itemId: activeItem.id,
+        name: activeItem.name,
         sizeLabel: sizeObj.label,
         unitPrice: sizeObj.price,
-        preference,
-        inscription,
+        isCustomQuote: Boolean(activeItem.isCustomQuote),
+        chosenOption,
+        customNote,
         qty: modalQty
       });
 
       closeCustomizer();
       updateCartUI();
-      showToast(`Added ${activeCake.name} to your order!`);
+      showToast(`Added ${activeItem.name} to your bag!`);
     }
 
     // =========================================================================
@@ -1047,17 +1311,32 @@
     function getCartTotals() {
       const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
       const subtotal = cart.reduce((sum, item) => sum + item.unitPrice * item.qty, 0);
-      return { totalQty, subtotal };
+      const hasCustomQuotes = cart.some(item => item.isCustomQuote);
+      return { totalQty, subtotal, hasCustomQuotes };
     }
 
     function updateCartUI() {
-      const { totalQty, subtotal } = getCartTotals();
+      const { totalQty, subtotal, hasCustomQuotes } = getCartTotals();
 
       // Update Header & Mobile Floating Bar badges
       document.getElementById("header-cart-count").textContent = totalQty;
       document.getElementById("mobile-bar-count").textContent = totalQty;
-      document.getElementById("mobile-bar-total").textContent = formatJMD(subtotal);
+
+      const subtotalDisplay = hasCustomQuotes && subtotal === 0
+        ? "Custom Quote"
+        : hasCustomQuotes
+          ? `${formatJMD(subtotal)} + Quote`
+          : formatJMD(subtotal);
+
+      document.getElementById("mobile-bar-total").textContent = subtotalDisplay;
       document.getElementById("cart-subtotal").textContent = formatJMD(subtotal);
+
+      const quoteDisclaimer = document.getElementById("cart-quote-disclaimer");
+      if (hasCustomQuotes) {
+        quoteDisclaimer.classList.remove("hidden");
+      } else {
+        quoteDisclaimer.classList.add("hidden");
+      }
 
       const container = document.getElementById("cart-items-container");
       const formSection = document.getElementById("checkout-form-section");
@@ -1069,15 +1348,15 @@
         container.innerHTML = `
           <div class="text-center py-12 px-4">
             <div class="w-16 h-16 rounded-full bg-cream-warm mx-auto flex items-center justify-center text-2xl mb-4">
-              🎂
+              🍰
             </div>
             <h4 class="font-serif text-2xl font-bold text-espresso">Your Order Bag is Empty</h4>
             <p class="text-xs sm:text-sm text-espresso/65 mt-2 max-w-xs mx-auto">
-              Browse Tracy's Jamaican cakes, choose your size and custom inscription, and send your order straight to WhatsApp.
+              Browse SweetSip&amp;Bites' cakes, banana breads, puddings, cookies &amp; cupcakes, then send your order straight to Tracy on WhatsApp.
             </p>
             <button onclick="closeCart()"
                     class="mt-6 px-6 py-3 rounded-full bg-espresso text-cream text-xs font-bold uppercase tracking-wider">
-              Browse Cake Menu
+              Browse Menu
             </button>
           </div>
         `;
@@ -1087,29 +1366,37 @@
       formSection.classList.remove("hidden");
       footer.classList.remove("hidden");
 
-      container.innerHTML = cart.map(item => `
-        <div class="p-4 rounded-2xl bg-white border border-espresso/10 shadow-sm">
-          <div class="flex items-start justify-between gap-2">
-            <div>
-              <h5 class="font-serif text-lg font-bold text-espresso leading-snug">${item.name}</h5>
-              <p class="text-xs text-gold-dark font-semibold mt-0.5">${item.sizeLabel} • ${item.preference}</p>
-              ${item.inscription ? `<p class="text-xs text-espresso/75 mt-1 bg-cream-warm px-2.5 py-1 rounded-lg inline-block">✍️ “${item.inscription}”</p>` : ""}
-            </div>
-            <button onclick="removeCartItem('${item.uid}')" aria-label="Remove item" class="text-xs text-espresso/40 hover:text-red-600 p-1">
-              ✕
-            </button>
-          </div>
+      container.innerHTML = cart.map(item => {
+        const linePrice = item.isCustomQuote
+          ? `<span class="text-xs font-bold px-2.5 py-1 rounded-full bg-gold/15 text-gold-dark">Custom Quote</span>`
+          : `<span class="text-sm font-bold text-espresso">${formatJMD(item.unitPrice * item.qty)}</span>`;
 
-          <div class="mt-3 pt-2.5 border-t border-espresso/10 flex items-center justify-between">
-            <div class="inline-flex items-center rounded-full bg-cream-warm border border-espresso/10 p-0.5">
-              <button onclick="updateCartItemQty('${item.uid}', -1)" class="w-7 h-7 rounded-full text-xs font-bold text-espresso">−</button>
-              <span class="w-7 text-center text-xs font-bold text-espresso">${item.qty}</span>
-              <button onclick="updateCartItemQty('${item.uid}', 1)" class="w-7 h-7 rounded-full text-xs font-bold text-espresso">+</button>
+        return `
+          <div class="p-4 rounded-2xl bg-white border border-espresso/10 shadow-sm">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <h5 class="font-serif text-lg font-bold text-espresso leading-snug">${item.name}</h5>
+                <p class="text-xs text-gold-dark font-semibold mt-0.5">
+                  ${item.sizeLabel}${item.chosenOption ? ` • ${item.chosenOption}` : ""}
+                </p>
+                ${item.customNote ? `<p class="text-xs text-espresso/75 mt-1 bg-cream-warm px-2.5 py-1 rounded-lg inline-block">✍️ “${item.customNote}”</p>` : ""}
+              </div>
+              <button onclick="removeCartItem('${item.uid}')" aria-label="Remove item" class="text-xs text-espresso/40 hover:text-red-600 p-1">
+                ✕
+              </button>
             </div>
-            <span class="text-sm font-bold text-espresso">${formatJMD(item.unitPrice * item.qty)}</span>
+
+            <div class="mt-3 pt-2.5 border-t border-espresso/10 flex items-center justify-between">
+              <div class="inline-flex items-center rounded-full bg-cream-warm border border-espresso/10 p-0.5">
+                <button onclick="updateCartItemQty('${item.uid}', -1)" class="w-7 h-7 rounded-full text-xs font-bold text-espresso">−</button>
+                <span class="w-7 text-center text-xs font-bold text-espresso">${item.qty}</span>
+                <button onclick="updateCartItemQty('${item.uid}', 1)" class="w-7 h-7 rounded-full text-xs font-bold text-espresso">+</button>
+              </div>
+              ${linePrice}
+            </div>
           </div>
-        </div>
-      `).join("");
+        `;
+      }).join("");
     }
 
     function buildWhatsAppReceiptText() {
@@ -1120,10 +1407,10 @@
       const custTime = document.getElementById("cust-time").value;
       const custNotes = document.getElementById("cust-notes").value.trim();
 
-      const { subtotal } = getCartTotals();
+      const { subtotal, hasCustomQuotes } = getCartTotals();
 
       const lines = [
-        "🎂 *NEW CAKE ORDER — TRACY'S CAKES*",
+        "🍰 *NEW ORDER — SWEETSIP&BITES*",
         "📍 _Portmore, St. Catherine, Jamaica_",
         "----------------------------------",
         `*Customer:* ${custName}`,
@@ -1136,22 +1423,32 @@
 
       cart.forEach((item, index) => {
         lines.push(`${index + 1}. *${item.name}* (${item.sizeLabel}) x${item.qty}`);
-        lines.push(`   • Prep: ${item.preference}`);
-        if (item.inscription) {
-          lines.push(`   • Cake Message: "${item.inscription}"`);
+        if (item.chosenOption) {
+          lines.push(`   • Option: ${item.chosenOption}`);
         }
-        lines.push(`   • Price: ${formatJMD(item.unitPrice * item.qty)}`);
+        if (item.customNote) {
+          lines.push(`   • Note: "${item.customNote}"`);
+        }
+        if (item.isCustomQuote) {
+          lines.push("   • Price: Price Varies / Done to Order (Quote on WhatsApp)");
+        } else {
+          lines.push(`   • Price: ${formatJMD(item.unitPrice * item.qty)}`);
+        }
       });
 
       lines.push("----------------------------------");
-      lines.push(`*ESTIMATED SUBTOTAL:* ${formatJMD(subtotal)}`);
+      if (hasCustomQuotes) {
+        lines.push(`*ESTIMATED SUBTOTAL:* ${formatJMD(subtotal)} (+ Custom Quote item(s) to be confirmed)`);
+      } else {
+        lines.push(`*ESTIMATED SUBTOTAL:* ${formatJMD(subtotal)}`);
+      }
 
       if (custNotes) {
         lines.push(`*Special Notes:* ${custNotes}`);
       }
 
       lines.push("");
-      lines.push("Hi Tracy! Please confirm availability and payment/deposit details for my order. Thank you! 🙏");
+      lines.push("Hi Tracy! Please confirm availability, custom quote pricing (if applicable), and payment/deposit details for my SweetSip&Bites order. Thank you! 🙏");
 
       return lines.join("\n");
     }
@@ -1206,7 +1503,7 @@
     document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("year").textContent = new Date().getFullYear();
 
-      // Set minimum selectable date to tomorrow (24-48h baking window)
+      // Set minimum selectable date to tomorrow
       const tomorrow = new Date();
       tomorrow.setDate(tomorrow.getDate() + 1);
       const yyyy = tomorrow.getFullYear();
